@@ -1,0 +1,212 @@
+html, body, .container, .content {
+    height: 100%;
+    touch-action: auto;
+}
+.card-header:first-child {
+    position: sticky;
+    display: block;
+    background: #597cff;
+    top: 0;
+    padding: 20px;
+    margin-top: 0;
+    z-index: 100;
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    padding: 10px 30px;
+    background: #597cff;
+    border: 0;
+    color: #ffffff;
+    outline: none;
+    border-radius: 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+.button:hover {
+    background: #597cff;
+    color: #ffffff;
+}
+/* aloha forms like material */
+    .aloha-form-el { 
+        position:relative; 
+        margin-bottom:45px; 
+    }
+    .aloha-form-el input {
+        font-size:18px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:100%;
+        border:none;
+        border-bottom:1px solid #757575;
+    }
+    .aloha-form-el select {
+        font-size:18px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:100%;
+        border:none;
+        border-bottom:1px solid #757575;
+    }
+    .aloha-form-el textarea {
+        font-size:18px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:100%;
+        border:1px solid #757575;
+        height: 150px;
+    }
+    .aloha-form-el input:focus {
+        outline:none;
+    }
+    .aloha-form-el select:focus {
+        outline:none;
+    }
+    .black {
+        color: #000000;
+    }
+    .no-decor {
+        text-decoration: none;
+    }
+    .float-left {
+        float: left;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .admin-sidebar button {
+        width: 50px;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        padding: 0px 60px 0 15px;
+        border: 0;
+        background: #fff;
+        border-right: 1px solid;
+        cursor: pointer;
+        outline: 0;
+    }
+    
+    .admin-sidebar h5 {
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 10px 0px 20px;
+        margin: 0;
+    }
+    /* LABEL ======================================= */
+    .aloha-form-el label {
+        color:#999; 
+        font-size:18px;
+        font-weight:normal;
+        position:absolute;
+        pointer-events:none;
+        left:5px;
+        top:10px;
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+
+    /* active state */
+    .aloha-form-el input:focus ~ label, .aloha-form-el input:valid ~ label {
+        top:-20px;
+        font-size:14px;
+        color:#5264AE;
+    }
+    .aloha-form-el select:focus ~ label, .aloha-form-el select:valid ~ label {
+        top:-20px;
+        font-size:14px;
+        color:#5264AE;
+    }
+  /* BOTTOM BARS ================================= */
+    .aloha-form-el .bar {
+        position:relative;
+        display:block;
+        width:100%;
+    }
+    .aloha-form-el .bar:before, .aloha-form-el .bar:after {
+        content:'';
+        height:2px; 
+        width:0;
+        bottom:1px; 
+        position:absolute;
+        background:#5264AE; 
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+    .aloha-form-el .bar:before {
+        left:50%;
+    }
+    .aloha-form-el .bar:after {
+        right:50%; 
+    }
+  
+    /* active state */
+    .aloha-form-el input:focus ~ .bar:before, .aloha-form-el input:focus ~ .bar:after {
+        width:50%;
+    }
+    .aloha-form-el select:focus ~ .bar:before, .aloha-form-el select:focus ~ .bar:after {
+        width:50%;
+    }
+    /* HIGHLIGHTER ================================== */
+    .aloha-form-el .highlight {
+        position:absolute;
+        height:60%; 
+        width:100px; 
+        top:25%; 
+        left:0;
+        pointer-events:none;
+        opacity:0.5;
+    }
+  
+    /* active state */
+    .aloha-form-el input:focus ~ .highlight {
+        -webkit-animation:inputHighlighter 0.3s ease;
+        -moz-animation:inputHighlighter 0.3s ease;
+        animation:inputHighlighter 0.3s ease;
+    }
+    .aloha-form-el select:focus ~ .highlight {
+        -webkit-animation:inputHighlighter 0.3s ease;
+        -moz-animation:inputHighlighter 0.3s ease;
+        animation:inputHighlighter 0.3s ease;
+    }
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
+    }
+    .night, .night div, .night textarea, .night input, .night label, .night select {
+        background: #000000 !important;
+        color: #fff !important;
+    }
+    .night input[type="text"] {
+        border-bottom: 1px solid #fff !important;
+    }

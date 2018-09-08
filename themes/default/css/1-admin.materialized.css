@@ -1,0 +1,108 @@
+html, body, .admin-header, .admin-side {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+}
+body {
+    overflow: hidden;
+}
+.admin-header {
+    float: left;
+}
+.admin-side {
+    float: right;
+}
+.darked:before {
+    content: "";
+    position: absolute;
+    background: #00000042;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;  
+}
+.admin-header .navbar {
+    height: 100%;
+    background: #4e5182;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.admin-header .navbar .logo {
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+.admin-header .navbar .logo svg{
+    width: 84%;
+    margin: 5px auto 0px;
+    padding: 0;
+}
+.admin-header .navbar .nav {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+.admin-header .navbar .nav .item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.admin-header .navbar .nav .active {
+    background: #ffffff24;
+}
+.admin-header .navbar .nav .item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.admin-header .navbar .nav .item-line {
+    margin: 5px 0;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid #fff;
+}
+@media (max-width: 992px) {
+    .admin-header.admin-mobile-menu {
+        left: -100%;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+    }
+    .admin-header.show {
+        left: 0;
+    }
+}
+.admin-sidebar {
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    position: static;
+}
+.admin-sidebar .menu-title h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 23px;
+}
+.admin-side .content {
+	position: relative;
+    height: calc(100% - 50px);
+    width: 100%;
+    background: #ffffff;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+    overflow: auto;
+    display: block;
+    padding: 30px 60px;
+}
